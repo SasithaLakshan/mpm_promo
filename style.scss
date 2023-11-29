@@ -102,6 +102,7 @@ main{
     video{
       opacity: .5;
       filter: grayscale(1);
+      width: 100%;
     }
     .container{
       left: 50%;
@@ -131,30 +132,170 @@ main{
     justify-content: center;
     position: relative;
     flex-direction: column;
-    outline: 1px solid red;
     margin: 0 auto;
     .team_{
       width: 95%;
-      height: 30rem;
-      outline: 1px solid red;
+      height: 40rem;
       h3{
         text-align: center;
         font-family: 'DM Sans',sans-serif;
         font-weight: 800;
         font-size: 3rem;
       }
+      .container{
+        display: flex;
+        width: 80%;
+        margin: 10rem auto;
+        justify-content: space-around;
+        div{
+          width: fit-content;
+          text-align: center;
+          .image{
+            width: 200px;
+            height: 200px;
+            background-color:  lightblue;
+            display: block;
+            border-radius: 50%;
+          }
+          p{
+            margin-top: 1rem;
+            font-family: 'DM Sans',sans-serif;
+            font-weight: 300;
+            font-size: 1.1rem;
+            &:nth-child(3){
+              font-size: .9rem;
+              color: lightgrey;
+            }
+          }
+        }
+      }
     }
     .sp_thanks{
       width: 95%;
       height: 30rem;
-      outline: 1px solid red;
+      h3{
+        font-family: 'DM Sans',sans-serif;
+        text-align: center;
+        font-weight: 800;
+        font-size: 3rem;
+      }
+      .container{
+        display: flex;
+        width: 45%;
+        margin: 10rem auto;
+        justify-content: space-around;
+        div{
+          width: fit-content;
+          text-align: center;
+          .image{
+            width: 200px;
+            height: 200px;
+            background-color:  lightblue;
+            display: block;
+            border-radius: 50%;
+          }
+          p{
+            margin-top: 1rem;
+            font-family: 'DM Sans',sans-serif;
+            font-weight: 300;
+            font-size: 1.1rem;
+            &:nth-child(3){
+              font-size: .9rem;
+              color: lightgrey;
+            }
+          }
+        }
+      }
     }
   }
   .product{
-
+    width: 95%;
+    margin: 10rem auto;
+    h1{
+      font-family: 'DM Sans',sans-serif;
+      font-weight: 800;
+      font-size: 3rem;
+      text-align: center;
+    }
+    .contents{
+      display: flex;
+      margin: 5rem auto;
+      justify-content: space-between;
+      .image{
+        margin-right: 2rem;
+        height: 700px;
+        width: 40%;
+        background-color: darkgrey;
+      }
+      p{
+        width: 65%;
+        font-family: 'DM Sans',sans-serif;
+        font-size: 1.2rem;
+        font-weight: 300;
+        line-height: 1.8;
+      }
+    }
   }
 }
 
 footer{
+  position: relative;
+  height: 80vh;
+  width: 95%;
+  margin: 10rem auto;
+  h1{
+    font-family: 'DM Sans',sans-serif;
+    font-size: 3rem;
+    text-align: center;
+  }
+  .contents{
+    position: relative;
+    margin-top: 10rem;
+    p{
+      font-family: 'DM Sans',sans-serif;
+      font-size: 2rem;
+    }
+    .sub{
+      h2{
+        font-family: 'DM Sans',sans-serif;
+        font-size: 6rem;
+        font-weight: 800;
+        line-height: 1.1;
+        margin-top: 2rem;
+      }
+      .button{
+        margin-top: 3rem;
+        border-radius: 4rem;
+        width: fit-content;
+        padding: 3rem 10rem;
+        background-color: white;
+          border: 2px solid rgb(88, 88, 224);
+        a{
+          text-decoration: none;
+          color: rgb(88, 88, 224);
+          font-family: 'DM Sans',sans-serif;
+          font-weight: 500;
+          font-size: 1.5rem;
+        }
+        &:hover{
+        background-color: rgb(88, 88, 224);
+          
+          a{
+            color: white;
+          }
+        }
+      }
+    }
+  }
+  .copyright{
+    position: absolute;
+    bottom: -5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    font-family: 'DM Sans',sans-serif;
+    color: darkgrey;
+    font-weight: 300;
+    font-size: 1.2rem;
+  }
 }
 
