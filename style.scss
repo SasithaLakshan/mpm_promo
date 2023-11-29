@@ -7,6 +7,17 @@
   scroll-behavior: smooth;
 }
 
+.counter{
+  position: fixed;
+  bottom: 2rem;
+  left: 2rem;
+  span{
+    font-family: 'DM Sans',sans-serif;
+    font-size: 1rem;
+    color: darkgrey;
+  }
+}
+
 header{
   display: flex;
   justify-content: space-between;
