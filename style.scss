@@ -35,7 +35,7 @@ header{
     font-size: 1.5rem;
     a{
       text-decoration: none;
-      color: black;
+      color: white;
       &:hover{
         color: orangered;
       }
@@ -50,7 +50,7 @@ header{
         margin-inline-end: 0;
         a{
           text-decoration: none;
-          color: black;
+          color: white;
           font-family: 'DM Sans',sans-serif;
           &:hover{
             color: orangered;
@@ -72,27 +72,32 @@ main{
       display: flex;
       flex-direction: column;
       align-items: center;
+      text-transform: uppercase;
       h1{
         font-family: 'DM Sans',sans-serif;
         font-size: 12rem;
+        color: white;
       }
       h3{
         font-family: 'DM Sans',sans-serif;
         font-weight: 200;
         font-size: 3rem;
+        color: white;
       }
       p{
         font-family: 'DM Sans',sans-serif;
         font-size: 1.3rem;
         font-weight: 300;
         line-height: 1.5;
+        color: white;
         width: 70%;
         margin-top: 1.5rem;
       }
       .button{
         cursor: pointer;
         margin-top: 3rem;
-        background-color: rgb(88, 88, 224);
+        // background-color: rgb(88, 88, 224);
+        background: linear-gradient(180deg, #5E6EFD 0%, rgba(19, 38, 203,0.91)100%);
         padding: 3rem 7rem;
         border-radius: 5rem;
         position: relative;
@@ -106,6 +111,16 @@ main{
           }
         }
       }
+    }
+    .background{
+      width: 100%;
+      height: 100vh;
+      position: absolute;
+      top: 0;
+      z-index: -1;
+      background-image: url('./images/5581940.png');
+      background-position: center;
+      background-size: cover;
     }
   }
   .about{
@@ -178,11 +193,53 @@ main{
               color: lightgrey;
             }
           }
+          &:nth-child(1){
+            .image{
+              background-image: url('./images/sasitha.jpg');
+              background-position: 6% 30%;
+              background-size: 250%;
+            }
+          }
+          &:nth-child(2){
+            .image{
+              background-image: url('./images/rumal.jpg');
+              background-position: center;
+              background-size: cover;
+            }
+          }
+          &:nth-child(3){
+            .image{
+              background-image: url('./images/tharindi.jpg');
+              background-position: center;
+              background-size: cover;
+            }
+          }
+          &:nth-child(4){
+            .image{
+              background-image: url('./images/sandunika.jpg');
+              background-position: center;
+              background-size: cover;
+            }
+          }
+          &:nth-child(5){
+            .image{
+              background-image: url('./images/uditha.jpg');
+              background-position: center;
+              background-size: cover;
+            }
+          }
+          &:nth-child(6){
+            .image{
+              background-image: url('./images/satha.jpg');
+              background-position: center;
+              background-size: cover;
+            }
+          }
         }
       }
     }
     .sp_thanks{
-      width: 95%;
+      width: 65%;
       height: 30rem;
       h3{
         font-family: 'DM Sans',sans-serif;
@@ -215,6 +272,19 @@ main{
               color: lightgrey;
             }
           }
+          &:nth-child(1){
+            .image{
+              background-image: url('./images/ishara.jpg');
+              background-size: contain;
+            }
+          }
+          &:nth-child(2){
+            .image{
+              background-image: url('./images/chathun.jpg');
+              background-position: center;
+              background-size: 150%;
+            }
+          }
         }
       }
     }
@@ -232,16 +302,21 @@ main{
       display: flex;
       margin: 5rem auto;
       justify-content: space-between;
+      align-items: center;
       .image{
         margin-right: 2rem;
-        height: 700px;
-        width: 40%;
+        height: 500px;
+        width: 30%;
         background-color: darkgrey;
+        background-image: url('./images/Cover.png');
+        background-position: center;
+        background-size: cover;
+        border-radius: 1rem;
       }
       p{
         width: 65%;
         font-family: 'DM Sans',sans-serif;
-        font-size: 1.2rem;
+        font-size: 1.4rem;
         font-weight: 300;
         line-height: 1.8;
       }
