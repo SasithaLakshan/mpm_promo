@@ -1,24 +1,24 @@
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100;0,9..40,200;0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;0,9..40,800;0,9..40,900;0,9..40,1000;1,9..40,100;1,9..40,200;1,9..40,300;1,9..40,400;1,9..40,500;1,9..40,600;1,9..40,700;1,9..40,800;1,9..40,900;1,9..40,1000&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100;0,9..40,200;0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;0,9..40,800;0,9..40,900;0,9..40,1000;1,9..40,100;1,9..40,200;1,9..40,300;1,9..40,400;1,9..40,500;1,9..40,600;1,9..40,700;1,9..40,800;1,9..40,900;1,9..40,1000&display=swap");
 
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   scroll-behavior: smooth;
 }
 
-.counter{
+.counter {
   position: fixed;
   bottom: 2rem;
   left: 2rem;
-  span{
-    font-family: 'DM Sans',sans-serif;
+  span {
+    font-family: "DM Sans", sans-serif;
     font-size: 1rem;
     color: darkgrey;
   }
 }
 
-header{
+header {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -30,29 +30,29 @@ header{
   left: 50%;
   transform: translateX(-50%);
   z-index: 10;
-  h1{
-    font-family: 'DM Sans',sans-serif;
+  h1 {
+    font-family: "DM Sans", sans-serif;
     font-size: 1.5rem;
-    a{
+    a {
       text-decoration: none;
       color: white;
-      &:hover{
+      &:hover {
         color: orangered;
       }
     }
   }
-  nav{
-    ul{
+  nav {
+    ul {
       display: flex;
       list-style: none;
-      li{
+      li {
         margin-inline: 1rem;
         margin-inline-end: 0;
-        a{
+        a {
           text-decoration: none;
           color: white;
-          font-family: 'DM Sans',sans-serif;
-          &:hover{
+          font-family: "DM Sans", sans-serif;
+          &:hover {
             color: orangered;
           }
         }
@@ -61,31 +61,31 @@ header{
   }
 }
 
-main{
-  .hero{
+main {
+  .hero {
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
-    .container{
+    .container {
       display: flex;
       flex-direction: column;
       align-items: center;
       text-transform: uppercase;
-      h1{
-        font-family: 'DM Sans',sans-serif;
+      h1 {
+        font-family: "DM Sans", sans-serif;
         font-size: 12rem;
         color: white;
       }
-      h3{
-        font-family: 'DM Sans',sans-serif;
+      h3 {
+        font-family: "DM Sans", sans-serif;
         font-weight: 200;
         font-size: 3rem;
         color: white;
       }
-      p{
-        font-family: 'DM Sans',sans-serif;
+      p {
+        font-family: "DM Sans", sans-serif;
         font-size: 1.3rem;
         font-weight: 300;
         line-height: 1.5;
@@ -93,65 +93,69 @@ main{
         width: 70%;
         margin-top: 1.5rem;
       }
-      .button{
+      .button {
         cursor: pointer;
         margin-top: 3rem;
         // background-color: rgb(88, 88, 224);
-        background: linear-gradient(180deg, #5E6EFD 0%, rgba(19, 38, 203,0.91)100%);
+        background: linear-gradient(
+          180deg,
+          #5e6efd 0%,
+          rgba(19, 38, 203, 0.91) 100%
+        );
         padding: 3rem 7rem;
         border-radius: 5rem;
         position: relative;
-        a{
+        a {
           text-decoration: none;
           color: white;
-          h4{
-            font-family: 'DM Sans',sans-serif;
+          h4 {
+            font-family: "DM Sans", sans-serif;
             font-size: 1.5rem;
             font-weight: 300;
           }
         }
       }
     }
-    .background{
+    .background {
       width: 100%;
       height: 100vh;
       position: absolute;
       top: 0;
       z-index: -1;
-      background-image: url('./images/5581940.png');
+      background-image: url("./images/5581940.png");
       background-position: center;
       background-size: cover;
     }
   }
-  .about{
+  .about {
     height: 130vh;
     position: relative;
-    video{
-      opacity: .8;
+    video {
+      opacity: 0.8;
       width: 100%;
     }
-    .container{
+    .container {
       left: 50%;
       top: 50%;
-      transform: translate(-50%,-50%);
+      transform: translate(-50%, -50%);
       position: absolute;
       text-align: center;
       width: 100%;
-      h1{
-        font-family: 'DM Sans',sans-serif;
+      h1 {
+        font-family: "DM Sans", sans-serif;
         font-size: 8rem;
         color: transparent;
         -webkit-text-stroke: 1px white;
       }
-      h5{
-        font-family: 'DM Sans',sans-serif;
+      h5 {
+        font-family: "DM Sans", sans-serif;
         font-size: 2rem;
         color: white;
         font-weight: 200;
       }
     }
   }
-  .team{
+  .team {
     height: 120vh;
     display: flex;
     align-items: center;
@@ -159,78 +163,78 @@ main{
     position: relative;
     flex-direction: column;
     margin: 0 auto;
-    .team_{
+    .team_ {
       width: 95%;
       height: 40rem;
-      h3{
+      h3 {
         text-align: center;
-        font-family: 'DM Sans',sans-serif;
+        font-family: "DM Sans", sans-serif;
         font-weight: 800;
         font-size: 3rem;
       }
-      .container{
+      .container {
         display: flex;
         width: 80%;
         margin: 10rem auto;
         justify-content: space-around;
-        div{
+        div {
           width: fit-content;
           text-align: center;
-          .image{
+          .image {
             width: 200px;
             height: 200px;
-            background-color:  lightblue;
+            background-color: lightblue;
             display: block;
             border-radius: 50%;
           }
-          p{
+          p {
             margin-top: 1rem;
-            font-family: 'DM Sans',sans-serif;
+            font-family: "DM Sans", sans-serif;
             font-weight: 300;
             font-size: 1.1rem;
-            &:nth-child(3){
-              font-size: .9rem;
+            &:nth-child(3) {
+              font-size: 0.9rem;
               color: lightgrey;
             }
           }
-          &:nth-child(1){
-            .image{
-              background-image: url('./images/sasitha.jpg');
+          &:nth-child(1) {
+            .image {
+              background-image: url("./images/sasitha.jpg");
               background-position: 6% 30%;
               background-size: 250%;
             }
           }
-          &:nth-child(2){
-            .image{
-              background-image: url('./images/rumal.jpg');
+          &:nth-child(2) {
+            .image {
+              background-image: url("./images/rumal.jpg");
               background-position: center;
               background-size: cover;
             }
           }
-          &:nth-child(3){
-            .image{
-              background-image: url('./images/tharindi.jpg');
+          &:nth-child(3) {
+            .image {
+              background-image: url("./images/tharindi.jpg");
               background-position: center;
               background-size: cover;
             }
           }
-          &:nth-child(4){
-            .image{
-              background-image: url('./images/sandunika.jpg');
+          &:nth-child(4) {
+            .image {
+              background-image: url("./images/sandunika.jpg");
               background-position: center;
               background-size: cover;
             }
           }
-          &:nth-child(5){
-            .image{
-              background-image: url('./images/uditha.jpg');
+          &:nth-child(5) {
+            .image {
+              background-image: url("./images/uditha.jpg");
               background-position: center;
               background-size: cover;
             }
           }
-          &:nth-child(6){
-            .image{
-              background-image: url('./images/satha.jpg');
+          &:nth-child(6) {
+            .image {
+              background-image: url("./images/satha.jpg");
               background-position: center;
               background-size: cover;
             }
@@ -238,49 +242,49 @@ main{
         }
       }
     }
-    .sp_thanks{
+    .sp_thanks {
       width: 65%;
       height: 30rem;
-      h3{
-        font-family: 'DM Sans',sans-serif;
+      h3 {
+        font-family: "DM Sans", sans-serif;
         text-align: center;
         font-weight: 800;
         font-size: 3rem;
       }
-      .container{
+      .container {
         display: flex;
         width: 45%;
         margin: 10rem auto;
         justify-content: space-around;
-        div{
+        div {
           width: fit-content;
           text-align: center;
-          .image{
+          .image {
             width: 200px;
             height: 200px;
-            background-color:  lightblue;
+            background-color: lightblue;
             display: block;
             border-radius: 50%;
           }
-          p{
+          p {
             margin-top: 1rem;
-            font-family: 'DM Sans',sans-serif;
+            font-family: "DM Sans", sans-serif;
             font-weight: 300;
             font-size: 1.1rem;
-            &:nth-child(3){
-              font-size: .9rem;
+            &:nth-child(3) {
+              font-size: 0.9rem;
               color: lightgrey;
             }
           }
-          &:nth-child(1){
-            .image{
-              background-image: url('./images/ishara.jpg');
+          &:nth-child(1) {
+            .image {
+              background-image: url("./images/ishara.jpg");
               background-size: contain;
             }
           }
-          &:nth-child(2){
-            .image{
-              background-image: url('./images/chathun.jpg');
+          &:nth-child(2) {
+            .image {
+              background-image: url("./images/chathun.jpg");
               background-position: center;
               background-size: 150%;
             }
@@ -289,33 +293,33 @@ main{
       }
     }
   }
-  .product{
+  .product {
     width: 95%;
     margin: 10rem auto;
-    h1{
-      font-family: 'DM Sans',sans-serif;
+    h1 {
+      font-family: "DM Sans", sans-serif;
       font-weight: 800;
       font-size: 3rem;
       text-align: center;
     }
-    .contents{
+    .contents {
       display: flex;
       margin: 5rem auto;
       justify-content: space-between;
       align-items: center;
-      .image{
+      .image {
         margin-right: 2rem;
         height: 500px;
         width: 30%;
         background-color: darkgrey;
-        background-image: url('./images/Cover.png');
+        background-image: url("./images/Cover.png");
         background-position: center;
         background-size: cover;
         border-radius: 1rem;
       }
-      p{
+      p {
         width: 65%;
-        font-family: 'DM Sans',sans-serif;
+        font-family: "DM Sans", sans-serif;
         font-size: 1.4rem;
         font-weight: 300;
         line-height: 1.8;
@@ -324,64 +328,78 @@ main{
   }
 }
 
-footer{
+footer {
   position: relative;
   height: 80vh;
   width: 95%;
   margin: 10rem auto;
-  h1{
-    font-family: 'DM Sans',sans-serif;
+  h1 {
+    font-family: "DM Sans", sans-serif;
     font-size: 3rem;
     text-align: center;
   }
-  .contents{
+  .contents {
     position: relative;
     margin-top: 10rem;
-    p{
-      font-family: 'DM Sans',sans-serif;
+    text-align: center;
+    p {
+      font-family: "DM Sans", sans-serif;
       font-size: 2rem;
     }
-    .sub{
-      h2{
-        font-family: 'DM Sans',sans-serif;
+    .sub {
+      h2 {
+        font-family: "DM Sans", sans-serif;
         font-size: 6rem;
         font-weight: 800;
         line-height: 1.1;
         margin-top: 2rem;
+        font-size: 72px;
+
+        background: -webkit-linear-gradient(
+          43deg,
+          #4158d0 0%,
+          #c850c0 46%,
+          #ffcc70 100%
+        );
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
       }
-      .button{
+      .button {
+        left: 50%;
+        transform: translateX(-50%);
+        position: absolute;
         margin-top: 3rem;
         border-radius: 4rem;
         width: fit-content;
         padding: 3rem 10rem;
         background-color: white;
-          border: 2px solid rgb(88, 88, 224);
-        a{
+        border: 2px solid rgb(88, 88, 224);
+        a {
           text-decoration: none;
           color: rgb(88, 88, 224);
-          font-family: 'DM Sans',sans-serif;
+          font-family: "DM Sans", sans-serif;
           font-weight: 500;
           font-size: 1.5rem;
         }
-        &:hover{
-        background-color: rgb(88, 88, 224);
-          
-          a{
+        &:hover {
+          background-color: rgb(88, 88, 224);
+
+          a {
             color: white;
           }
         }
       }
     }
   }
-  .copyright{
+  .copyright {
     position: absolute;
     bottom: -5rem;
     left: 50%;
     transform: translateX(-50%);
-    font-family: 'DM Sans',sans-serif;
+    font-family: "DM Sans", sans-serif;
     color: darkgrey;
     font-weight: 300;
     font-size: 1.2rem;
   }
 }
-
